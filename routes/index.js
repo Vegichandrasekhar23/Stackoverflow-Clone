@@ -10,7 +10,10 @@ mongoose.connect(dbURL);
 
 router.get('/',async(req,res)=>{
   const user = await User.find();
-  res.send(user);
+  res.send(user.map((e)=>[
+      e.name,
+      e.email
+    ]));
 })
 
 module.exports = router;
