@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+#stackoverflow-icon{
+    height:8vh;
+    width: 8vh;    
+}
+.login-form> label {
+    font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.login-form> input {
+    padding: 10px;
+    border: 1px solid #0095ff8e;
+    background-color: transparent;
+    border-radius: 3px;
+    outline: none;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  
+.input-field {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    margin: 5px 0;
+    width: 25vw;
+    height: 6vh;
+  }
+
+.login-form{
+  width: 30vw;
+  height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(66, 42, 42, 0.19);
+  border-radius: 3px;
+  text-align: center;
+  align-items: center;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.login-btn{
+    width: 8vw;
+    font-size: 1.25vw;
+    border-radius: 15px;
+    height: 3vw;
+    text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.links{
+    font-size: 1.25vw;
 }
